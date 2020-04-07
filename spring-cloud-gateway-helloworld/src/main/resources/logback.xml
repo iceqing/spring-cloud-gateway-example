@@ -1,0 +1,21 @@
+<configuration>
+
+	<property name="CHARSET" value="UTF-8" />
+	<property name="DEFAULT_PATTERN" value="%d{yyyy-MM-dd-HH:mm:ss.SSS} %level [%X{ctxLogId}][%thread] %logger:%line  - %msg%n" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${DEFAULT_PATTERN}</pattern>
+			<charset>${CHARSET}</charset>
+		</encoder>
+	</appender>
+
+	<logger name="org.springframework.security" level="DEBUG" additivity="false"/>
+	<logger name="me.ice" level="DEBUG" />
+	<logger name="com.baifubao" level="DEBUG" />
+
+	<!-- Loggers : Root Logger -->
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

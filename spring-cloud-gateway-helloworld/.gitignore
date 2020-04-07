@@ -1,0 +1,22 @@
+# IDEA
+.idea/
+out/
+target/
+*.iml
+
+#gradle
+.gradle/
+gradle/
+build/
+
+#java
+*.class
+
+# Package Files
+*.jar
+*.war
+*.log
+.project
+.settings/
+gradlew
+gradlew.bat
