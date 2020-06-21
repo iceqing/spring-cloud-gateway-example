@@ -26,7 +26,7 @@ public class RouteConfiguration {
                         .filters(f -> f.stripPrefix(2)
                                 .prefixPath("/api/ping")
                         )
-                        .uri("https://127.0.0.1:5555"))
+                        .uri("http://127.0.0.1:5555"))
                 .route(r -> r.path("/api/**")
                         .filters(f -> f.stripPrefix(1)
                                 .prefixPath("/v2/movie/")
