@@ -21,7 +21,12 @@ public class RouteConfiguration {
     public RouteLocator helloRoute(RouteLocatorBuilder builder) {
         log.info("helloRoute, build RouteLocator bean");
 
-        return builder.routes()
+        return builder.routes().
+                route(r -> r.path("/a/ping")
+                        .filters(f -> f.stripPrefix(2)
+                                .prefixPath("/api/ping")
+                        )
+                        .uri("https://127.0.0.1:5555"))
                 .route(r -> r.path("/api/**")
                         .filters(f -> f.stripPrefix(1)
                                 .prefixPath("/v2/movie/")

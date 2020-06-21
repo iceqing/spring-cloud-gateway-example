@@ -12,7 +12,6 @@
 
 	<logger name="org.springframework.security" level="DEBUG" additivity="false"/>
 	<logger name="me.ice" level="DEBUG" />
-	<logger name="com.baifubao" level="DEBUG" />
 
 	<!-- Loggers : Root Logger -->
 	<root level="DEBUG">
