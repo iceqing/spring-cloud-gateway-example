@@ -1,3 +1,6 @@
+# Spring gateway Demo Project
+
+**[wrk](https://github.com/wg/wrk) test script**
 
 ```
 wrk -t25 -c 1000 -d 10s http://127.0.0.1:8080/a/ping
@@ -18,3 +21,6 @@ Requests/sec:    400.04
 Transfer/sec:     69.96KB
 
 ```
+
+
+[1] [reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response](https://github.com/spring-cloud/spring-cloud-gateway/issues/1148)
