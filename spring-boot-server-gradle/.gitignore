@@ -1,0 +1,19 @@
+# IDEA
+.idea/
+out/
+target/
+*.iml
+gradlew
+gradlew.bat
+
+#gradle
+.gradle/
+gradle/
+build/
+
+#java
+*.class
+
+# Package Files
+*.jar
+*.war
